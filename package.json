@@ -1,7 +1,7 @@
 {
   "name": "atom-maya-quick-help",
   "main": "./lib/atom-maya-quick-help",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Attempts to recreate the same functionality provided by the Maya Script Editor 'Quick Help' function",
   "keywords": [],
   "activationCommands": {
