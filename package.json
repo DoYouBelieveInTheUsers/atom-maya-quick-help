@@ -1,0 +1,16 @@
+{
+  "name": "atom-maya-quick-help",
+  "main": "./lib/atom-maya-quick-help",
+  "version": "0.0.0",
+  "description": "Attempts to recreate the same functionality provided by the Maya Script Editor 'Quick Help' function",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "atom-maya-quick-help:toggle"
+  },
+  "repository": "https://github.com/DoYouBelieveInTheUsers/atom-maya-quick-help",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,95 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.atom-maya-quick-help {
+    width: 350px;
+	  height: 100%;
+    white-space: nowrap;
+	  overflow-y: scroll;
+}
+
+.atom-maya-quick-help-header>h2 {
+    text-align: center;
+}
+
+.atom-maya-quick-help-height-resizer {
+    height: 10px;
+    border-width: 2px;
+    border-bottom-width:3px;
+    border-bottom-color:#1b1d23;
+    border-bottom-style: solid;
+    cursor: row-resize;
+    margin-bottom: 10px;
+}
+.atom-maya-quick-help-table table, tbody {
+    width: 95%;
+    padding-left: 5px;
+    margin-right: 5px;
+}
+.atom-maya-quick-help-table tr:nth-child(2n+1) {
+    background-color: #282c34;
+    padding:2px;
+}
+.atom-maya-quick-help-table tr:nth-child(2n+2) {
+    background-color: #1b1d23;
+    padding:2px;
+}
+.atom-maya-quick-help-table th {
+    border: 3px;
+    background-color:#1b1d23;
+    border-color: #21252b;
+    border-style: solid;
+    border-radius: 5px;
+    padding:2px;
+    text-align:center;
+}
+.atom-maya-quick-help-table td {
+    min-width: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+.cellhover:hover {
+    background-color: #3a3f4b;
+}
+.input-block-item atom-text-editor[mini] {
+    overflow: auto;
+    font-size: 1.15em;
+    line-height: 2em;
+    max-height: 10em;
+    padding-left: 0.5em;
+    border-radius: 3px;
+    color: #d7dae0;
+    border: 1px solid #181a1f;
+    background-color: #1b1d23;
+}
+
+.searchbox>.select-list>.list-group {
+  max-height: 100px
+}
+
+.button-area {
+  padding-left: 60px;
+  padding-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    height: 27px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    border-radius: 3px;
+    background-color: #353b45;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 0;
+    -webkit-user-select: none;
+}

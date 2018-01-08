@@ -1,0 +1,6 @@
+{
+  "atom-workspace": {
+    "ctrl-alt-x": "atom-maya-quick-help:toggle",
+    "ctrl-alt-b": "atom-maya-quick-help:getCommand"
+  }
+}
