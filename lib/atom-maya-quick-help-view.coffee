@@ -7,7 +7,6 @@ selectListView = require './select-list-view'
 SidePanel = require './atom-maya-quick-help-side-panel'
 exec = require('child_process').exec
 shell = require('electron').shell
-pyshell = require('python-shell')
 path = require 'path'
 module.exports =
 
