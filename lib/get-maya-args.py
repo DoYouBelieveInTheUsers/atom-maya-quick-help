@@ -3,14 +3,18 @@ import sys
 from optparse import OptionParser
 import urllib2
 import re
+import popen2
 from bs4 import BeautifulSoup
-import webbrowser
 
-def get_maya_flags(command):
+def get_maya_flags(command, version, language):
     """
     Scrapes the Maya docs page for provided maya cmd and returns the flags.
+    TODO - Figure how to do this in coffescript! :) that or store everything locally
     """
-    request = urllib2.Request("http://help.autodesk.com/cloudhelp/2018/ENU/Maya-Tech-Docs/CommandsPython/" + command + ".html")
+    if language == "Python":
+        request = urllib2.Request("http://help.autodesk.com/cloudhelp/" + version + "/ENU/Maya-Tech-Docs/CommandsPython/" + command + ".html")
+    else:
+        request = urllib2.Request("http://help.autodesk.com/cloudhelp/" + version + "/ENU/Maya-Tech-Docs/Commands/" + command + ".html")
     try:
         html = urllib2.urlopen(request).read()
         soup = BeautifulSoup(html, 'html.parser')
@@ -41,6 +45,6 @@ if __name__=='__main__':
     PARSER.add_option("-l", "--language", dest="language", help="Maya language")
     (OPTIONS, ARGS) = PARSER.parse_args()
     if OPTIONS.command:
-        get_maya_flags(OPTIONS.command)
+        get_maya_flags(OPTIONS.command, OPTIONS.version, OPTIONS.language)
     else:
         sys.exit("No command given")
