@@ -55,10 +55,7 @@ class QuickHelpView extends SidePanel
 
   updateOptions: (options) ->
     @options = options
-    if @options.language == "Mel"
-      @language = ""
-    else
-      @language = @options.language
+    @language = @options.language
     if @version != @options.mayaVersion
       @version = @options.mayaVersion
     @updateSelectList()
@@ -75,6 +72,7 @@ class QuickHelpView extends SidePanel
   setCommandList: () ->
     file = os.homedir() + "\\.atom\\packages\\atom-maya-quick-help\\source\\Commands_" + @language + "_" + @version + ".txt"
     #console.log file
+    console.log file
     if fs.existsSync(file)
       readCmdListFile = ->
         fs.readFileSync file, 'utf-8'
