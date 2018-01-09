@@ -3,7 +3,7 @@
 $ = require 'jquery'
 fs = require 'fs'
 os = require 'os'
-selectListView = require 'atom-select-list'
+selectListView = require './select-list-view'
 SidePanel = require './atom-maya-quick-help-side-panel'
 exec = require('child_process').exec
 shell = require('electron').shell
